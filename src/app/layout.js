@@ -5,8 +5,8 @@ const tektur = Tektur({ subsets: ['latin'], weight: '400' })
 
 export const metadata = {
   title: {
-    absolute: 'SalamP | Web-ML Developer',
-    default: 'SalamP | Web-ML Developer',
+    absolute: 'SalamP | Dev',
+    default: 'SalamP | Dev',
     template: '%s | SalamP'
   },
   description: "Salam Pararta's Portfolio",
