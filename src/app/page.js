@@ -10,9 +10,9 @@ export default function Home() {
 
   const links = [
     {
-      name: 'Pojok Priangan',
-      desc: 'Find our Shortcuts and CollegeHacks for UPI Bandung',
-      link: 'https://pojokpriangan.my.id',
+      name: 'LinkedIn',
+      desc: 'Know me better at my personal profile on LinkedIn',
+      link: 'https://www.linkedin.com/in/salam-pararta/',
     },
     {
       name: 'GitHub',
@@ -20,15 +20,15 @@ export default function Home() {
       link: 'https://github.com/SenzawaG',
     },
     {
-      name: 'Insta',
-      desc: 'Know me better at my personal profile Instagram',
-      link: 'https://www.instagram.com/senzawa.g/',
+      name: 'Codes',
+      desc: 'Find some of website coding Guide, Tips and Tricks here!',
+      link: 'https://www.instagram.com/lamp.devs/',
     },
     {
-      name: 'Codes',
-      desc: 'Find some of website coding Tips and Tricks here!',
-      link: 'https://www.instagram.com/lamp.devs/',
-    }
+      name: 'Pojok Priangan',
+      desc: 'Find our Shortcuts and CollegeHacks for UPI Bandung',
+      link: 'https://pojokpriangan.my.id',
+    },
   ]
 
   return (
