@@ -17,7 +17,7 @@ export default function Home() {
     {
       name: 'GitHub',
       desc: 'Take a look at some of my projects here!',
-      link: 'https://github.com/SenzawaG',
+      link: 'https://github.com/SalamPS',
     },
     {
       name: 'Codes',
