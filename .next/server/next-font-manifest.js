@@ -1,1 +1,0 @@
-self.__NEXT_FONT_MANIFEST='{"pages":{},"app":{"/home/lamp/lampcode/salamp-id/portfolio/src/app/layout":["static/media/698dd179106aaa30.p.woff2"]},"appUsingSizeAdjust":false,"pagesUsingSizeAdjust":false}';
