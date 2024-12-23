@@ -18,7 +18,7 @@ export default function PortfolioCard ({item, index, setPopup}: {item: _links, i
 				{item.name}
 		</h2>
 		<p className="text-sm text-gray-400 line-clamp-2">
-				{item.desc}
+				{item.year ? `(${item.year})` : ''} {item.desc}
 		</p>
 	</motion.div>
 }
