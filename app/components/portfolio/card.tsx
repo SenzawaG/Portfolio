@@ -1,7 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 import { motion } from "framer-motion";
 import { _links } from "./data";
+import { Dispatch, SetStateAction } from "react";
 
-export default function PortfolioCard ({item, index, setPopup}: {item: _links, index: number, setPopup: Function}) {
+export default function PortfolioCard ({item, index, setPopup}: {item: _links, index: number, setPopup:Dispatch<SetStateAction<number>>}) {
 	return <motion.div
 		key={item.link+index}
 		onClick={() => {setPopup(index)}}

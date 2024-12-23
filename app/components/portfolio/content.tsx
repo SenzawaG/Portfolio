@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 "use client"
-import { motion } from "framer-motion";
 import { useState } from "react";
 import Typing from "../utils/Typing";
 import { _links, beenMade, beenPartOf } from "./data";
@@ -19,7 +18,7 @@ export default function ContentPortfolio () {
             <h1 className="text-xl md:text-4xl py-8">
                 {mode === 'beenMade' ? <Typing words={['Projects been made']}/> : <Typing words={['Has been part of']}/>}
             </h1>
-            <button className="text-xl" onClick={() => setMode(mode === 'beenMade' ? 'beenPartOf' : 'beenMade')}>
+            <button className="text-xl md:text-3xl" onClick={() => setMode(mode === 'beenMade' ? 'beenPartOf' : 'beenMade')}>
                 {mode === 'beenMade' ? <i className="bi bi-toggle-off"/> : <i className="bi bi-toggle-on"/>}
             </button>
         </div>

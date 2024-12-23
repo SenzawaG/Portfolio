@@ -1,9 +1,9 @@
 'use client'
-import { useEffect, useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { _links, beenMade, beenPartOf } from "./data";
 import Link from "next/link";
 
-export default function PopupPortfolio ({popup, setPopup, mode}: {popup:number, setPopup: Function, mode:'beenMade'|'beenPartOf'}) {
+export default function PopupPortfolio ({popup, setPopup, mode}: {popup:number, setPopup:Dispatch<SetStateAction<number>>, mode:'beenMade'|'beenPartOf'}) {
 	const [item, setItem] = useState<_links|undefined>(undefined)
 	useEffect(() => {
 		if (popup !== -1) {
@@ -16,7 +16,7 @@ export default function PopupPortfolio ({popup, setPopup, mode}: {popup:number, 
 		else {
 			setItem(undefined)
 		}
-	}, [popup])
+	}, [popup, mode])
 
 	return <>
 		<div className={`backdrop-blur-sm bg-opacity-50 fixed inset-0 h-full w-full duration-500 bg-black ${popup === -1 ? ' opacity-0 z-[-1]' : 'opacity-100 z-[997]'}`}></div>
