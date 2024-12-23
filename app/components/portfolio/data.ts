@@ -34,8 +34,9 @@ export const beenMade:_links[] = [
     {
         name: 'Kencana Seni',
         icon: 'https://img.icons8.com/color/48/000000/typescript.png',
-        desc: 'Product of Devotion. An inclusive Education Platform for Disaster Mitigation, made for students with special needs.',
+        desc: 'Product of Devotion. An inclusive Education Platform for Disaster Mitigation, made for students with special needs. Granted an HKI (Hak Kekayaan Intelektual) from Kemenkumham.',
         link: 'https://kencanaseni.com',
+        imageUrl: ['kencana-seni-3.png', 'kencana-seni-2.png'],
     },
     {
         name: 'Priangan WiFi',
@@ -91,9 +92,10 @@ export const beenPartOf:_links[] = [
     {
         name: 'Kencana Seni',
         icon: '/assets/portfolio/kencana-seni.png',
-        desc: 'Full stack, developed the disaster mitigation educational inclusive website using NextJS and Gamepad API.',
+        desc: 'Full stack, developed the disaster mitigation educational inclusive website using NextJS and Gamepad API. Granted an HKI (Hak Kekayaan Intelektual) from Kemenkumham.',
         link: 'https://kencanaseni.com',
         year: 2024,
+        imageUrl: ['kencana-seni.png', 'kencana-seni-2.png'],
     },
     {
         name: 'Robotics Lab',
