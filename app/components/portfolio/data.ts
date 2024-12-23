@@ -3,7 +3,8 @@ export interface _links {
     icon:string, 
     desc:string, 
     link:string, 
-    year?:number 
+    year?:number,
+    imageUrl?:string[],
 }
 export const beenMade:_links[] = [
     {
