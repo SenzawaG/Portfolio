@@ -62,7 +62,7 @@ a {
 }
 
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 16px;
   background-color: transparent;
 }
 ::-webkit-scrollbar-corner {
@@ -81,7 +81,7 @@ a {
 ::-webkit-scrollbar-thumb {
   background: #313b5d;
   border-radius: 999px;
-  border: solid 6px #1d2337;
+  border: solid 4px #1d2337;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #455383;

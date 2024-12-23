@@ -6,7 +6,7 @@ const contact:_contact[] = [
   {
     name: 'WhatsApp',
     full: '(+62) 813-6677-6988',
-    link: 'https://wa.me/081366776988',
+    link: 'https://wa.me/6281366776988',
     icon: 'whatsapp'
   },
   {
@@ -35,7 +35,7 @@ export default function IndexBottom () {
                   duration: 1.5,
                   ease: "easeInOut",
                 }}>
-                I{"'"}m constantly exploring new technologies and currently diving in JS Machine Learning.
+                I{"'"}m constantly exploring new technologies and currently diving in Python Machine Learning.
             </motion.span>
         </div>
     </div>
@@ -43,6 +43,7 @@ export default function IndexBottom () {
         <div className="absolute flex flex-col flex-wrap items-end justify-end gap-4">
             {contact.map(((item:_contact) =>(
             <motion.a 
+                target="_blank"
                 key={item.link} 
                 href={item.link} 
                 initial={{ backgroundColor: '#313b5d55', opacity: 0 }}

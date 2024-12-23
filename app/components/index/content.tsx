@@ -10,7 +10,7 @@ const links:_links[] = [
     },
     {
         name: 'GitHub',
-        desc: 'Take a look at some of my projects here!',
+        desc: 'Take a look at some of my public repos here!',
         link: 'https://github.com/SalamPS',
     },
     {
@@ -19,9 +19,9 @@ const links:_links[] = [
         link: 'https://www.instagram.com/lamp.devs/',
     },
     {
-        name: 'Pojok Priangan',
-        desc: 'Find our Shortcuts and CollegeHacks for UPI Bandung',
-        link: 'https://pojokpriangan.my.id',
+        name: 'Featured',
+        desc: 'Current project that I am working on, I love to work on it tbh!',
+        link: 'https://netradapt.com/',
     },
 ]
 

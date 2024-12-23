@@ -1,9 +1,11 @@
+/* eslint-disable @next/next/no-img-element */
 "use client"
 import Link from "next/link";
 import Introduction from "./components/index/introduction";
 import Content from "./components/index/content";
 import IndexBottom from "./components/index/bottom";
 import IndexLogo from "./components/index/logo";
+import ContentPortfolio from "./components/portfolio/content";
 
 const date = new Date();
 const tanggal = date.getDate();
@@ -53,8 +55,11 @@ export default function Home() {
         </div>
       </div>
     </main>
-    <section className="">
+    <section id="medias">
       <Content/>
+    </section>
+    <section id="medias">
+      <ContentPortfolio/>
     </section>
     <footer className="text-center text-sm text-gray-500 py-8">&#169; 2024 LamP. All rights reserved.</footer>
   </>)

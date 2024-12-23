@@ -8,11 +8,6 @@ const job:_job[] = [
     position: 'Founder',
     company: 'LamP',
     link: 'https://id.linkedin.com/company/lampdynamics?trk=public_profile_experience-item_profile-section-card_subtitle-click'
-  },
-  {
-    position: 'CEO',
-    company: 'Netradapt',
-    link: 'https://netradapt.com'
   }
 ]
 
@@ -72,7 +67,7 @@ export default function Introduction () {
                     duration: .8,
                     ease: "easeOut",
                 }}>
-                A Fullstack Web Developer with a love for MERN Stack and NextJS. Also work with React Native and IoTs.
+                A Fullstack Web Developer with a love for MERN Stack and NextJS. Also work with Flutter, C, C++ and Python.
             </motion.p>
         </div>
         <div className="flex flex-wrap justify-end gap-2 md:gap-3 mt-4 text-sm">
