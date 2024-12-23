@@ -59,7 +59,7 @@ export const beenMade:_links[] = [
         name: 'CEPATga',
         icon: 'https://img.icons8.com/color/48/000000/javascript.png',
         desc: 'Excel-like mobile application for PLN employees to record detailed status and specifications of the power grid in the field.',
-        link: 'https://kencanaseni.com',
+        link: 'https://web.pln.co.id/',
     },
     {
         name: 'PWA Dashboard',
