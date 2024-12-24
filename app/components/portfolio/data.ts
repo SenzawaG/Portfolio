@@ -131,8 +131,8 @@ export const beenPartOf:_links[] = [
     {
         name: 'SMP Santa Ursula',
         icon: '/assets/portfolio/serviam.png',
-        desc: 'Taught robotics theories and materials to their students for a full semester. Successfully led them to finish a robotic project. The project involved designing, building, and programming a robot to perform specific tasks, which enhanced the student\'s understanding of robotics and teamwork.',
-        link: 'https://lms.santaursula-bdg.sch.id/smp/',
+        desc: 'Devotion for SMP Santa Ursula Bandung. Taught robotics theories and materials to their students for a full semester. Successfully led them to finish a robotic project. The project involved designing, building, and programming a robot to perform specific tasks, which enhanced the student\'s understanding of robotics and teamwork.',
+        link: 'https://www.kompasiana.com/muhammadtaufikdwiputra4541/66d6ba7634777c778a5e7da2/pengabdian-pada-masyarakat-program-pelatihan-peningkatan-kemampuan-computational-thinking-siswa-dengan-menggunakan-media-robotik-bagi-guru',
         year: 2024,
         imageUrl: ['serviam-1.jpg', 'serviam-2.jpg'],
     },
