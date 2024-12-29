@@ -100,20 +100,20 @@ export const links:_links[] = [
         imageUrl: ['dashboard-1.png'],
     },
     {
+        slug: 'bm-pigano',
+        type: 'beenMade',
+        name: 'PiGANO',
+        icon: 'https://img.icons8.com/color/48/000000/dart.png',
+        desc: 'A mobile application to instantly encrypt and decrypt your private message using CC and LSB method. This app allows you to secure secret messages within an image.',
+        link: 'https://github.com/SalamPS/PiGANO/tree/main',
+    },
+    {
         slug: 'bm-integral-solver',
         type: 'beenMade',
         name: 'Integral Solver',
         icon: 'https://img.icons8.com/color/48/000000/c-plus-plus-logo.png',
         desc: 'Solving integral problems even with multiple variables. Made with Native C++. Available on my GitHub Repository.',
         link: 'https://github.com/SalamPS/Calculus-Calculator',
-    },
-    {
-        slug: 'bm-diy-math-functions',
-        type: 'beenMade',
-        name: 'DIY Math Functions',
-        icon: 'https://img.icons8.com/color/48/000000/c-plus-plus-logo.png',
-        desc: 'For those who want to know how to code math logics instead of using libraries. Made with Native C++. Available on my GiHub Repository.',
-        link: 'https://github.com/SalamPS/CPP-DIY-Function',
     },
     
     ////////////////////////////////////////////
