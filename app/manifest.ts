@@ -25,7 +25,7 @@ export default function manifest(): MetadataRoute.Manifest {
 			{
 				form_factor: "wide",
 				src: "/pwa/ss-wide.png",
-				sizes: "1919x1078"
+				sizes: "1980x1080"
 			},
 			{
 				form_factor: "narrow",
