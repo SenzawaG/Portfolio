@@ -27,3 +27,5 @@ jobs:
         protocol: ${{ secrets.GIT_PROTOCOL }}
         exclude: |
           app/**
+          git/**
+          .github/**
