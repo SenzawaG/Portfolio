@@ -8,7 +8,7 @@ jobs:
     - name: 🚚 Get latest code
       uses: actions/checkout@v4
 
-    - name: Use Node.js 16
+    - name: Use Node.js 20.17.0
       uses: actions/setup-node@v2
       with:
         node-version: '20.17.0'
@@ -25,4 +25,5 @@ jobs:
         username: ${{ secrets.GIT_USERNAME }}
         password: ${{ secrets.GIT_PASSWORD }}
         protocol: ${{ secrets.GIT_PROTOCOL }}
-        local-dir: ./.next/
+        exclude: |
+          app/**
