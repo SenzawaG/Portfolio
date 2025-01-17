@@ -26,6 +26,7 @@ jobs:
         password: ${{ secrets.GIT_PASSWORD }}
         protocol: ${{ secrets.GIT_PROTOCOL }}
         exclude: |
+          node_modules/**
           app/**
           .git/**
           .github/**
