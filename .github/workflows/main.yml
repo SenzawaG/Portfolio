@@ -25,4 +25,4 @@ jobs:
         username: ${{ secrets.GIT_USERNAME }}
         password: ${{ secrets.GIT_PASSWORD }}
         protocol: ${{ secrets.GIT_PROTOCOL }}
-        local-dir: ./next/
+        local-dir: ./.next/
