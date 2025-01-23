@@ -25,8 +25,17 @@ jobs:
         username: ${{ secrets.GIT_USERNAME }}
         password: ${{ secrets.GIT_PASSWORD }}
         protocol: ${{ secrets.GIT_PROTOCOL }}
-        exclude: |
-          node_modules/**
-          app/**
-          .git/**
-          .github/**
+        local-dir: .next,public/asset
+        exclude: '**/*'
+  
+    - name: 🔄 Edit .htaccess
+      run: |
+        ssh user@your-cpanel-server '
+          echo "# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
+          PassengerAppRoot \"/home/salampid/subway/salampid\"
+          PassengerBaseURI \"/\"
+          PassengerNodejs \"/home/salampid/nodevenv/subway/salampid/20/bin/node\"
+          PassengerAppType node
+          PassengerStartupFile server.js
+          # DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END" > .htaccess
+        '
