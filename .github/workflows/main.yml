@@ -28,11 +28,11 @@ jobs:
         exclude: |
           app/**
           node_modules/**
-          public/user/**
+          public/**
+          .next/**
           .git/**
           .github/**
           .eslintrc.json
-          .gitignore
           next-env.d.ts
           next.config.ts
           package.json
@@ -44,7 +44,10 @@ jobs:
   
     - name: 🔄 Edit .htaccess
       run: |
-        ssh user@your-cpanel-server '
+        echo "${{ secrets.SSH_PASSWORD }}" > private_key
+        chmod 600 private_key
+        ssh -i private_key -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_SERVER }} '
+          cd public_html
           echo "# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
           PassengerAppRoot \"/home/salampid/subway/salampid\"
           PassengerBaseURI \"/\"
