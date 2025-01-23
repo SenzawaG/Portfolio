@@ -25,8 +25,20 @@ jobs:
         username: ${{ secrets.GIT_USERNAME }}
         password: ${{ secrets.GIT_PASSWORD }}
         protocol: ${{ secrets.GIT_PROTOCOL }}
-        local-dir: .next,public/asset
-        exclude: '**/*'
+        exclude: |
+          app/**
+          node_modules/**
+          public/user/**
+          .eslintrc.json
+          .gitignore
+          next-env.d.ts
+          next.config.ts
+          package.json
+          postcss.config.mjs
+          README.md
+          server.ts
+          tailwind.config.ts
+          tsconfig.json
   
     - name: 🔄 Edit .htaccess
       run: |

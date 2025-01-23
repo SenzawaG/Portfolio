@@ -17,7 +17,7 @@ export default function Home() {
     <main className="flex flex-col justify-between items-center p-4 md:p-8 h-[100vmax] md:h-screen gap-12">
       <div className="self-stretch flex md:flex-row md:pb-0 flex-wrap justify-between items-center gap-2 md:gap-4">
         <p className="relative m-0 p-2 px-4 md:p-4 text-sm border-[1px] border-gray-600 rounded-xl">
-          Last changes: &nbsp;
+          Last update: &nbsp;
           <code className="code">{`${tanggal}/${bulan}/${tahun}`}</code>
         </p>
         <div className="flex justify-end items-end gap-2 text-sm md:text-base text-gray-300 ml-1">
