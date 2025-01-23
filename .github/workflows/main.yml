@@ -29,6 +29,8 @@ jobs:
           app/**
           node_modules/**
           public/user/**
+          .git/**
+          .github/**
           .eslintrc.json
           .gitignore
           next-env.d.ts
