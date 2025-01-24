@@ -26,6 +26,7 @@ jobs:
         username: ${{ secrets.GIT_USERNAME }}
         password: ${{ secrets.GIT_PASSWORD }}
         protocol: ${{ secrets.GIT_PROTOCOL }}
+        timeout: 180000
         exclude: |
           app/**
           node_modules/**
