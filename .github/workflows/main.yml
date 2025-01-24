@@ -45,7 +45,7 @@ jobs:
   
     - name: 🔄 Edit .htaccess
       run: |
-        sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_SERVER }} '
+        sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_SERVER }} '
           echo "# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
           PassengerAppRoot \"/home/salampid/subway/salampid\"
           PassengerBaseURI \"/\"
