@@ -29,7 +29,8 @@ jobs:
         exclude: |
           app/**
           node_modules/**
-          public/user/**
+          public/**
+          .next/**
           .git/**
           .github/**
           .eslintrc.json
