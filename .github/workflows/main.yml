@@ -36,6 +36,7 @@ jobs:
           next-env.d.ts
           next.config.ts
           postcss.config.mjs
+          package-lock.json
           README.md
           tailwind.config.ts
           tsconfig.json
