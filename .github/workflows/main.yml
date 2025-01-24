@@ -29,17 +29,14 @@ jobs:
         exclude: |
           app/**
           node_modules/**
-          public/**
-          .next/**
+          public/user/**
           .git/**
           .github/**
           .eslintrc.json
           next-env.d.ts
           next.config.ts
-          package.json
           postcss.config.mjs
           README.md
-          server.ts
           tailwind.config.ts
           tsconfig.json
 
@@ -52,11 +49,13 @@ jobs:
         port: ${{ secrets.SSH_PORT }}
         script: |
           whoami
+          source ${{ secrets.NODE_BIN }}/activate && cd ${{ secrets.NODE_DIR }}
+          npm install
           cd ${{ secrets.SSH_DIR }}
           echo "# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
-          PassengerAppRoot \"/home/salampid/subway/salampid\"
+          PassengerAppRoot \"${{ secrets.NODE_DIR }}\"
           PassengerBaseURI \"/\"
-          PassengerNodejs \"/home/salampid/nodevenv/subway/salampid/20/bin/node\"
+          PassengerNodejs \"${{ secrets.NODE_BIN }}/node\"
           PassengerAppType node
           PassengerStartupFile server.js
           # DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END" > .htaccess
