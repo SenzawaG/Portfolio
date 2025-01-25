@@ -52,6 +52,7 @@ jobs:
         port: ${{ secrets.SSH_PORT }}
         script: |
           whoami
+          ps aux | grep "${{ secrets.NODE_DIR }}" | awk '{print $2}' | head -n 1 | xargs kill -9
           source ${{ secrets.NODE_BIN }}/activate && cd ${{ secrets.NODE_DIR }}
           npm install
           cd ${{ secrets.SSH_DIR }}
