@@ -18,6 +18,17 @@ jobs:
         npm install
         npm run build
     
+    
+    - name: 🔄 Reconfigure .next
+      uses: appleboy/ssh-action@v1.2.0
+      with:
+        host: ${{ secrets.SSH_SERVER }}
+        username: ${{ secrets.SSH_USER }}
+        password: ${{ secrets.SSH_PASSWORD }}
+        port: ${{ secrets.SSH_PORT }}
+        script: |
+          rm .ftp-deploy-sync-state.json
+    
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       continue-on-error: true
@@ -51,7 +62,6 @@ jobs:
         password: ${{ secrets.SSH_PASSWORD }}
         port: ${{ secrets.SSH_PORT }}
         script: |
-          whoami
           ps aux | grep "${{ secrets.NODE_DIR }}" | awk '{print $2}' | head -n 1 | xargs kill -9
           source ${{ secrets.NODE_BIN }}/activate && cd ${{ secrets.NODE_DIR }}
           npm install
