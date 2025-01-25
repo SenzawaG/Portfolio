@@ -31,7 +31,7 @@ export default function Home() {
           >
             <img
               src="/assets/next.svg"
-              alt="Vercel Logo"
+              alt="Vercel"
               className="vercelLogo mb-[4px] md:mb-[7px] w-[66px] md:w-[100px]"
               height={100}
               width={64}
