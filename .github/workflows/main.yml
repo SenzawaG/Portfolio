@@ -35,6 +35,7 @@ jobs:
           .github/**
           .eslintrc.json
           .next/cache/**
+          .gitignore
           next-env.d.ts
           next.config.ts
           postcss.config.mjs
