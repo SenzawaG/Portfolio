@@ -30,7 +30,7 @@ jobs:
         exclude: |
           app/**
           node_modules/**
-          public/user/**
+          public/storage/**
           .git/**
           .github/**
           .eslintrc.json

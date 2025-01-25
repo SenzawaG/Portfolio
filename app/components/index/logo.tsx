@@ -13,7 +13,7 @@ export default function IndexLogo () {
         }}
         className="text-center md:text-start col-span-5 md:col-span-2">
         <img
-            src="/lamp.png"
+            src="/assets/lamp.png"
             alt="Next.js Logo"
             className="z-10 inline-block"
             width={180}
