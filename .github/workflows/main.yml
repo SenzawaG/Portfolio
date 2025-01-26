@@ -12,12 +12,6 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: '20.17.0'
-      
-    - name: 🔨 Build Project
-      run: |
-        npm install
-        npm run build
-    
     
     - name: ⚙️ Reconfigure FTP Status
       uses: appleboy/ssh-action@v1.2.0
@@ -27,14 +21,19 @@ jobs:
         password: ${{ secrets.SSH_PASSWORD }}
         port: ${{ secrets.SSH_PORT }}
         script: |
+          whoami
           cd ${{ secrets.NODE_DIR }}
           find . -mindepth 1 ! -regex '\./public\(/.*\)?' -delete
           cd public
           find . -mindepth 1 ! -regex '\./storage\(/.*\)?' -delete
+      
+    - name: 🔨 Build Project
+      run: |
+        npm install
+        npm run build
     
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-      continue-on-error: true
       with:
         server: ${{ secrets.GIT_SERVER }}
         username: ${{ secrets.GIT_USERNAME }}
