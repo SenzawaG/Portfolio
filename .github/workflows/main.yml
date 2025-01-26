@@ -22,10 +22,12 @@ jobs:
         port: ${{ secrets.SSH_PORT }}
         script: |
           cd ${{ secrets.NODE_DIR }}
+          pwd
           ls
           find . -mindepth 1 ! -regex '\./public\(/.*\)?' -delete
           ls
           cd public
+          pwd
           ls
           find . -mindepth 1 ! -regex '\./storage\(/.*\)?' -delete
           ls
