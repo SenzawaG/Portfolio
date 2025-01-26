@@ -19,7 +19,7 @@ jobs:
         npm run build
     
     
-    - name: 🔄 Reconfigure .next
+    - name: ⚙️ Reconfigure FTP Status
       uses: appleboy/ssh-action@v1.2.0
       with:
         host: ${{ secrets.SSH_SERVER }}
@@ -28,7 +28,7 @@ jobs:
         port: ${{ secrets.SSH_PORT }}
         script: |
           cd ${{ secrets.NODE_DIR }}
-          rm .ftp-deploy-sync-state.json
+          find . -maxdepth 1 -type d ! -path "./public/storage" ! -path "." -exec rm -rf {} +
     
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
