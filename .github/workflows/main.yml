@@ -21,11 +21,14 @@ jobs:
         password: ${{ secrets.SSH_PASSWORD }}
         port: ${{ secrets.SSH_PORT }}
         script: |
-          whoami
           cd ${{ secrets.NODE_DIR }}
+          ls
           find . -mindepth 1 ! -regex '\./public\(/.*\)?' -delete
+          ls
           cd public
+          ls
           find . -mindepth 1 ! -regex '\./storage\(/.*\)?' -delete
+          ls
       
     - name: 🔨 Build Project
       run: |
