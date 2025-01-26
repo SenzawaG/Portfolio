@@ -28,7 +28,7 @@ jobs:
         port: ${{ secrets.SSH_PORT }}
         script: |
           cd ${{ secrets.NODE_DIR }}
-          find . -maxdepth 1 -type d ! -path "./public/storage" ! -path "." -exec rm -rf {} +
+          find . -maxdepth 1 -type d ! -path "./public" ! -path "." -exec rm -rf {} +
     
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
